@@ -1,0 +1,36 @@
+{
+  "name": "sample.docker-typescript-debugging",
+  "version": "1.0.0",
+  "description": "A sample of hot-reloading, debuggable code in a development environment.",
+  "scripts": {
+    "dev": "nodemon --legacy-watch --inspect=0.0.0.0:9229",
+    "docker:down": "docker-compose down",
+    "docker:exec": "docker-compose exec sample-docker-typescript-debugging sh",
+    "docker:up": "docker-compose up -d",
+    "docker:up-build": "docker-compose up -d --build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/METACEO/sample.docker-typescript-debugging.git"
+  },
+  "author": "James Allen <j.b.allen@avanade.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/METACEO/sample.docker-typescript-debugging/issues"
+  },
+  "homepage": "https://github.com/METACEO/sample.docker-typescript-debugging#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "lodash": "^4.17.5",
+    "pug": "^2.0.0-rc.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.11.1",
+    "@types/lodash": "^4.14.104",
+    "@types/node": "^9.4.6",
+    "@types/pug": "^2.0.4",
+    "nodemon": "^1.15.1",
+    "ts-node": "~4.1.0",
+    "typescript": "^2.7.2"
+  }
+}

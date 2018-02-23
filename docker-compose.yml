@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  sample-docker-typescript-debugging:
+    build: .
+    entrypoint: /bin/sh
+    stdin_open: true
+    tty: true
+    # command: npm run debug
+    environment:
+      - PORT=8080
+    volumes:
+      - ./src:/code/src
+    ports:
+      - "8080:8080"
+      - "9229:9229"
